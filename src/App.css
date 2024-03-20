@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gilroy';
+}
+video{
+  width: 100%;
+  height: 772px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+.logo img{
+  position: absolute;
+  z-index: 2;
+  mix-blend-mode: multiply;
+  height: auto;
+  width: 400px;
+}
+.study {
+  position: absolute;
+  font-size: 9vh;
+  z-index: +2;
+  color: #000000;
+  padding-top: 290px;
+  padding-left: 250px;
+
+}
+.get {
+  position: absolute;
+  z-index: +2;
+  font-size: 5vh;
+  padding-top: 380px;
+  padding-left: 250px;
+  color: #000000;
+}

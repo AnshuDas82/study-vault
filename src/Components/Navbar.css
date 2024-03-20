@@ -1,0 +1,15 @@
+.nav{
+    list-style-type: none;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    margin-left: 1190px;
+}
+.nav a{
+    text-decoration: none;
+    padding-left: 40px;
+    font-size: large;
+    color: #000;
+    padding-top: 20px;
+}
+
