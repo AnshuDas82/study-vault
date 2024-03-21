@@ -1,36 +1,65 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Gilroy';
+.hero-section {
+  position: relative;
+  width: 100%;
 }
-video{
+
+.hero-section .logo {
+  position: absolute;
+  z-index: 1;
+}
+
+.logo img {
+  height: auto;
+  width: 400px;
+  margin-left: 5%;
+}
+
+.overlay-text {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.overlay-text .study {
+  color: #000000;
+  font-size: 9vh;
+}
+
+.overlay-text .get {
+  color: #000000;
+  font-size: 5vh;
+}
+
+video {
   width: 100%;
   height: 772px;
   object-fit: cover;
   opacity: 0.6;
 }
-.logo img{
-  position: absolute;
-  z-index: 2;
-  mix-blend-mode: multiply;
-  height: auto;
-  width: 400px;
-}
-.study {
-  position: absolute;
-  font-size: 9vh;
-  z-index: +2;
-  color: #000000;
-  padding-top: 290px;
-  padding-left: 250px;
 
-}
-.get {
-  position: absolute;
-  z-index: +2;
-  font-size: 5vh;
-  padding-top: 380px;
-  padding-left: 250px;
-  color: #000000;
+
+@media screen and (max-width:500px) {
+
+  .logo img {
+    margin-left: 3%;
+  }
+
+  .overlay-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay-text .study {
+    color: #000000;
+    font-size: 6vh;
+  }
+
+  .overlay-text .get {
+    color: #000000;
+    font-size: 2vh;
+  }
 }
